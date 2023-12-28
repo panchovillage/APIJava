@@ -1,6 +1,5 @@
 package ao.teste.primeiro_exemplo.Service;
 
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Optional;
 
@@ -8,13 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import Model.Produto;
-import ao.teste.primeiro_exemplo.repository.ProdutoRepository;
+import ao.teste.primeiro_exemplo.repository.ProdutoRepository_old;
 
 @Service
 public class ProdutoService {
 
     @Autowired
-    private ProdutoRepository produtoRepository;
+    private ProdutoRepository_old produtoRepository;
 
 
     /**

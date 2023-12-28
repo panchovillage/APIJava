@@ -1,8 +1,20 @@
 package Model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+
+
+@Entity
 public class Produto {
     
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     //#region Atributos
+   
     private Integer id;
 
     private String nome;
